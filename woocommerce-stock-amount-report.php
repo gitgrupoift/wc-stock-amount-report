@@ -61,7 +61,10 @@ class WC_StockAmount_Report {
     add_filter('woocommerce_admin_reports',  __CLASS__ . '::initialize_location_admin_report', 12, 1);
 
     // Add the path to the report class so WooCommerce can parse it
-		add_filter('wc_admin_reports_path',  __CLASS__ . '::initialize_location_admin_reports_path', 12, 3);
+    add_filter('wc_admin_reports_path',  __CLASS__ . '::initialize_location_admin_reports_path', 12, 3);
+
+    // Load translation files
+    add_action('plugins_loaded', __CLASS__ . '::load_plugin_textdomain');
   }
 
   /**
@@ -95,6 +98,15 @@ class WC_StockAmount_Report {
     }
 
     return $report_path;
+  }
+
+  /**
+  * Load our language settings for internationalization
+  *
+  * @since 0.0.1
+  */
+  public static function load_plugin_textdomain() {
+    load_plugin_textdomain('woocommerce-stock-amount-report', false, basename(self::$plugin_dir) . '/languages');
   }
 }
 
