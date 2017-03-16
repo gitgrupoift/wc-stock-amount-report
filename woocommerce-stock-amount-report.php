@@ -59,6 +59,9 @@ class WC_StockAmount_Report {
 
     // Add the reports layout to the WooCommerce -> Reports admin section
     add_filter('woocommerce_admin_reports',  __CLASS__ . '::initialize_location_admin_report', 12, 1);
+
+    // Add the path to the report class so WooCommerce can parse it
+		add_filter('wc_admin_reports_path',  __CLASS__ . '::initialize_location_admin_reports_path', 12, 3);
   }
 
   /**
@@ -77,6 +80,21 @@ class WC_StockAmount_Report {
     );
 
     return $report;
+  }
+
+  /**
+  * If we hit one of our reports in the WC get_report function, change the path to our dir.
+  *
+  * @param array Array of Report types & their labels
+  * @return array Array of Report types & their labels, including the our path.
+  * @since 0.0.1
+  */
+  public static function initialize_location_admin_reports_path($report_path, $name, $class) {
+    if ('WC_Report_stock_amount' == $class) {
+      $report_path = self::$plugin_dir . '/classes/class-wc-report-' . $name . '.php';
+    }
+
+    return $report_path;
   }
 }
 
