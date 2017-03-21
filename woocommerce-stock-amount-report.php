@@ -52,7 +52,7 @@ class WC_StockAmount_Report {
   *
   * @since 0.0.1
   */
-  public function init() {
+  public static function init() {
     global $wpdb;
 
     self::$plugin_dir = dirname(__FILE__);
