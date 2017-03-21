@@ -37,5 +37,8 @@ Developers can contribute to the source code on the [GitHub Repository](https://
 
 == Changelog ==
 
-= 0.0.1 - 16/03/2017 =
+= 0.0.2 - 2017-03-21 =
+* Remove woocommerce references
+
+= 0.0.1 - 2017-03-16 =
 * Initial Release
