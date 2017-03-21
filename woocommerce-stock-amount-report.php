@@ -53,8 +53,6 @@ class WC_StockAmount_Report {
   * @since 0.0.1
   */
   public static function init() {
-    global $wpdb;
-
     self::$plugin_dir = dirname(__FILE__);
 
     // Add the reports layout to the WooCommerce -> Reports admin section
@@ -79,7 +77,7 @@ class WC_StockAmount_Report {
       'title'       => __('Stock amount', 'woocommerce-location-report'),
       'description' => '',
       'hide_title'  => true,
-      'callback'    => array('WC_Admin_Reports', 'get_report'),
+      'callback'    => array('WC_Admin_Reports', 'get_report')
     );
 
     return $report;
