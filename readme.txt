@@ -1,4 +1,4 @@
-=== WooCommerce Stock Amount Report ===
+=== WC Stock Amount Report ===
 Contributors: thiagogsr
 Tags: woocommerce, extension, reporting, stock, analytics
 Requires at least: 3.8
@@ -17,7 +17,7 @@ The report visualizes how much you have in your available stock if you sell ever
 
 = Get involved =
 
-Developers can contribute to the source code on the [GitHub Repository](https://github.com/thiagogsr/woocommerce-stock-amount-report).
+Developers can contribute to the source code on the [GitHub Repository](https://github.com/thiagogsr/wc-stock-amount-report).
 
 == Installation ==
 
@@ -28,7 +28,7 @@ Developers can contribute to the source code on the [GitHub Repository](https://
 
 = Instructions =
 
-1. Upload the entire 'woocommerce-stock-amount-report' folder to the '/wp-content/plugins/' directory
+1. Upload the entire 'wc-stock-amount-report' folder to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Screenshots ==

@@ -1,4 +1,4 @@
-# WooCommerce Stock Amount Report
+# WC Stock Amount Report
 
 This is a WordPress plugin to extend the functionality of [WooCommerce](http://wordpress.org/plugins/woocommerce/).
 
@@ -13,6 +13,5 @@ The report visualizes how much you have in your available stock if you sell ever
 
 ## Installation Instructions
 
-1. Upload the entire 'woocommerce-stock-amount-report' folder to the '/wp-content/plugins/' directory
+1. Upload the entire 'wc-stock-amount-report' folder to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-

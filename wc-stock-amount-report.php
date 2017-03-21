@@ -1,7 +1,7 @@
 <?php
 /**
-* Plugin Name: WooCommerce Stock Amount
-* Plugin URI: https://github.com/thiagogsr/woocommerce-stock-amount-report
+* Plugin Name: WC Stock Amount
+* Plugin URI: https://github.com/thiagogsr/wc-stock-amount-report
 * Description: WooCommerce report to visualize how much you have in your available stock if you sale everything.
 * Author: Thiago Guimarães
 * Author URI: https://github.com/thiagogsr
@@ -29,7 +29,7 @@ if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get
 }
 
 /**
-* # WooCommerce Stock Amount Report Main Plugin Class
+* # WC Stock Amount Report Main Plugin Class
 *
 * ## Plugin Overview
 *
