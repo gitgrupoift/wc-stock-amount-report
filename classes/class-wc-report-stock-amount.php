@@ -40,8 +40,8 @@ class WC_Report_Stock_Amount extends WP_List_Table {
     }
 
     echo '<br />';
-    echo '<span class="title-count">Total ';
-    echo wc_price($total);
+    echo '<span class="title-count">';
+    echo __('Total', 'woocommerce') . ' ' . wc_price($total);
     echo '</span>';
   }
 
