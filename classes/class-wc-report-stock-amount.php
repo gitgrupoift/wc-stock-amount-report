@@ -134,7 +134,7 @@ class WC_Report_Stock_Amount extends WP_List_Table {
       INNER JOIN {$wpdb->postmeta} AS postmeta ON posts.ID = postmeta.post_id
       INNER JOIN {$wpdb->postmeta} AS postmeta2 ON posts.ID = postmeta2.post_id
       WHERE 1=1
-      AND posts.post_type = 'product_variation'
+      AND posts.post_type IN('product', 'product_variation')
       AND posts.post_status = 'publish'
       AND postmeta2.meta_key = '_manage_stock' AND postmeta2.meta_value = 'yes'
       AND postmeta.meta_key = '_stock' AND CAST(postmeta.meta_value AS SIGNED) > '0'
