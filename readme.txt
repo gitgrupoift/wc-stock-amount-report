@@ -1,9 +1,9 @@
 === WC Stock Amount Report ===
-Contributors: thiagogsr
+Contributors: thiagogsrwp
 Tags: woocommerce, extension, reporting, stock, analytics
 Requires at least: 3.8
 Tested up to: 4.7.3
-Stable tag: 0.1
+Stable tag: 0.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -36,6 +36,9 @@ Developers can contribute to the source code on the [GitHub Repository](https://
 1. Example how much I have in my available stock.
 
 == Changelog ==
+
+= 0.0.3 - 2017-03-24 =
+* Fix contributors
 
 = 0.0.2 - 2017-03-21 =
 * Remove woocommerce references

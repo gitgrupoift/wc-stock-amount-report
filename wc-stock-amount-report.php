@@ -5,7 +5,7 @@
 * Description: WooCommerce report to visualize how much you have in your available stock if you sale everything.
 * Author: Thiago Guimarães
 * Author URI: https://github.com/thiagogsr
-* Version: 0.0.2
+* Version: 0.0.3
 * Text Domain: wc_stock_amount_report
 * Domain Path: /languages/
 *
@@ -39,7 +39,7 @@ if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get
 */
 class WC_StockAmount_Report {
   /** plugin version number */
-  public static $version = '0.0.2';
+  public static $version = '0.0.3';
 
   /** @var string the plugin file */
   public static $plugin_file = __FILE__;
@@ -50,7 +50,7 @@ class WC_StockAmount_Report {
   /**
   * Initializes the plugin
   *
-  * @since 0.0.2
+  * @since 0.0.1
   */
   public static function init() {
     self::$plugin_dir = dirname(__FILE__);
@@ -70,7 +70,7 @@ class WC_StockAmount_Report {
   *
   * @param array Array of All Report types & their labels
   * @return array Array of All Report types & their labels, including the 'Stock amount' report.
-  * @since 0.0.2
+  * @since 0.0.1
   */
   public static function initialize_location_admin_report($report) {
     $report['stock']['reports']['stock_amount'] = array(
@@ -88,7 +88,7 @@ class WC_StockAmount_Report {
   *
   * @param array Array of Report types & their labels
   * @return array Array of Report types & their labels, including the our path.
-  * @since 0.0.2
+  * @since 0.0.1
   */
   public static function initialize_location_admin_reports_path($report_path, $name, $class) {
     if ('WC_Report_stock_amount' == $class) {
@@ -101,7 +101,7 @@ class WC_StockAmount_Report {
   /**
   * Load our language settings for internationalization
   *
-  * @since 0.0.2
+  * @since 0.0.1
   */
   public static function load_plugin_textdomain() {
     load_plugin_textdomain('woocommerce-stock-amount-report', false, basename(self::$plugin_dir) . '/languages');
