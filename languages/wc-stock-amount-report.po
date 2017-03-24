@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wc-stock-amount-report\n"
+"POT-Creation-Date: 2017-03-24 01:43-0300\n"
+"PO-Revision-Date: 2017-03-24 01:44-0300\n"
+"Last-Translator: Thiago Guimarães <thiagogsr@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/class-wc-report-stock-amount.php:44
+msgid "Total"
+msgstr "Total"
+
+#: classes/class-wc-report-stock-amount.php:110
+msgid "Product"
+msgstr "Produto"
+
+#: classes/class-wc-report-stock-amount.php:111
+msgid "Units in stock"
+msgstr "Unidades em estoque"
+
+#: classes/class-wc-report-stock-amount.php:112
+msgid "Price"
+msgstr "Preço"
+
+#: classes/class-wc-report-stock-amount.php:113
+msgid "Total Price"
+msgstr "Preço total"
+
+#: wc-stock-amount-report.php:77
+msgid "Stock amount"
+msgstr "Estoque em reais"
