@@ -5,7 +5,7 @@
 * Description: WooCommerce report to visualize how much you have in your available stock if you sale everything.
 * Author: Thiago Guimarães
 * Author URI: https://github.com/thiagogsr
-* Version: 0.0.3
+* Version: 0.0.4
 * Text Domain: wc_stock_amount_report
 * Domain Path: /languages/
 *
@@ -39,7 +39,7 @@ if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get
 */
 class WC_StockAmount_Report {
   /** plugin version number */
-  public static $version = '0.0.3';
+  public static $version = '0.0.4';
 
   /** @var string the plugin file */
   public static $plugin_file = __FILE__;
