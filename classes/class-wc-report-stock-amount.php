@@ -41,7 +41,7 @@ class WC_Report_Stock_Amount extends WP_List_Table {
 
     echo '<br />';
     echo '<span class="title-count">';
-    echo __('Total', 'woocommerce') . ' ' . wc_price($total);
+    echo __('Total', 'wc-report-stock-amount') . ' ' . wc_price($total);
     echo '</span>';
   }
 
@@ -107,10 +107,10 @@ class WC_Report_Stock_Amount extends WP_List_Table {
    */
   public function get_columns() {
     return array(
-      'product'     => __('Product', 'woocommerce'),
-      'stock_level' => __('Units in stock', 'woocommerce'),
-      'price'  => __('Price', 'woocommerce'),
-      'total_price' => __('Total Price', 'woocommerce')
+      'product'     => __('Product', 'wc-report-stock-amount'),
+      'stock_level' => __('Units in stock', 'wc-report-stock-amount'),
+      'price'  => __('Price', 'wc-report-stock-amount'),
+      'total_price' => __('Total Price', 'wc-report-stock-amount')
     );
   }
 

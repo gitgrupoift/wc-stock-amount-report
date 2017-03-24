@@ -74,7 +74,7 @@ class WC_StockAmount_Report {
   */
   public static function initialize_location_admin_report($report) {
     $report['stock']['reports']['stock_amount'] = array(
-      'title'       => __('Stock amount', 'woocommerce-location-report'),
+      'title'       => __('Stock amount', 'wc-report-stock-amount'),
       'description' => '',
       'hide_title'  => true,
       'callback'    => array('WC_Admin_Reports', 'get_report')
