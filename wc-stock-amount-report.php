@@ -104,7 +104,7 @@ class WC_StockAmount_Report {
   * @since 0.0.1
   */
   public static function load_plugin_textdomain() {
-    load_plugin_textdomain('woocommerce-stock-amount-report', false, basename(self::$plugin_dir) . '/languages');
+    load_plugin_textdomain('wc-stock-amount-report', false, basename(self::$plugin_dir) . '/languages');
   }
 }
 
