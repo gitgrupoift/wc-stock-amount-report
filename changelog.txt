@@ -1,5 +1,8 @@
 *** WC Stock Amount Report Changelog ***
 
+2017-03-26 - version 0.0.7
+* Add pot
+
 2017-03-25 - version 0.0.6
 * Fix plugin name
 

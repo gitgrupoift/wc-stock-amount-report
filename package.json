@@ -1,6 +1,6 @@
 {
   "name": "wc-stock-amount-report",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Report to visualize how much you have in your available stock if you sell everything.",
   "main": "Gruntfile.js",
   "scripts": {
