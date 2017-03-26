@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/thiagogsr/wc-stock-amount-report/issues"
   },
-  "homepage": "https://github.com/thiagogsr/wc-stock-amount-report#readme"
+  "homepage": "https://github.com/thiagogsr/wc-stock-amount-report#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-pot": "^0.3.0"
+  }
 }
