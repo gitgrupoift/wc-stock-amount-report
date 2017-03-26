@@ -32,16 +32,22 @@ class WC_Report_Stock_Amount extends WP_List_Table {
   }
 
   public function display_total() {
-    $total = 0;
+    $amount = 0;
+    $count = 0;
 
     foreach ($this->items as $item) {
       $product = wc_get_product($item->id);
-      $total += $this->product_total_price($product);
+      $amount += $this->product_total_price($product);
+      $count += $product->get_stock_quantity();
     }
 
     echo '<br />';
     echo '<span class="title-count">';
-    echo __('Total', 'wc-report-stock-amount') . ' ' . wc_price($total);
+    echo $count . ' ' . __('items', 'wc-report-stock-amount');
+    echo '</span>';
+
+    echo '<span class="title-count">';
+    echo __('Total', 'wc-report-stock-amount') . ' ' . wc_price($amount);
     echo '</span>';
   }
 
