@@ -74,7 +74,7 @@ class WC_StockAmount_Report {
   */
   public static function initialize_location_admin_report($report) {
     $report['stock']['reports']['stock_amount'] = array(
-      'title'       => __('Stock amount', 'wc-report-stock-amount'),
+      'title'       => __('Stock amount', 'wc-stock-amount-report'),
       'description' => '',
       'hide_title'  => true,
       'callback'    => array('WC_Admin_Reports', 'get_report')
@@ -91,8 +91,8 @@ class WC_StockAmount_Report {
   * @since 0.0.1
   */
   public static function initialize_location_admin_reports_path($report_path, $name, $class) {
-    if ('WC_Report_stock_amount' == $class) {
-      $report_path = self::$plugin_dir . '/classes/class-wc-report-' . $name . '.php';
+    if ('WC_Stock_Amount_Report' == $class) {
+      $report_path = self::$plugin_dir . '/classes/class-wc-' . $name . '-report.php';
     }
 
     return $report_path;

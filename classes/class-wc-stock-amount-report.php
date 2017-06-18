@@ -8,7 +8,7 @@ if (!class_exists('WP_List_Table')) {
 }
 
 /**
-* WC_Report_Stock_Amount
+* WC_Stock_Amount_Report
 *
 * @author      Thiago Guimarães (https://github.com/thiagogsr)
 * @category    Admin
@@ -16,7 +16,7 @@ if (!class_exists('WP_List_Table')) {
 * @version     0.0.7
 */
 
-class WC_Report_Stock_Amount extends WP_List_Table {
+class WC_Stock_Amount_Report extends WP_List_Table {
   private $max_items;
 
   /**
@@ -43,11 +43,11 @@ class WC_Report_Stock_Amount extends WP_List_Table {
 
     echo '<br />';
     echo '<span class="title-count">';
-    echo $count . ' ' . __('items', 'wc-report-stock-amount');
+    echo $count . ' ' . __('items', 'wc-stock-amount-report');
     echo '</span>';
 
     echo '<span class="title-count">';
-    echo __('Total', 'wc-report-stock-amount') . ' ' . wc_price($amount);
+    echo __('Total', 'wc-stock-amount-report') . ' ' . wc_price($amount);
     echo '</span>';
   }
 
@@ -113,10 +113,10 @@ class WC_Report_Stock_Amount extends WP_List_Table {
    */
   public function get_columns() {
     return array(
-      'product'     => __('Product', 'wc-report-stock-amount'),
-      'stock_level' => __('Units in stock', 'wc-report-stock-amount'),
-      'price'  => __('Price', 'wc-report-stock-amount'),
-      'total_price' => __('Total Price', 'wc-report-stock-amount')
+      'product'     => __('Product', 'wc-stock-amount-report'),
+      'stock_level' => __('Units in stock', 'wc-stock-amount-report'),
+      'price'  => __('Price', 'wc-stock-amount-report'),
+      'total_price' => __('Total Price', 'wc-stock-amount-report')
     );
   }
 
