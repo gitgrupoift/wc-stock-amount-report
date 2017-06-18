@@ -3,7 +3,7 @@ Contributors: thiagogsrwp
 Tags: woocommerce, extension, reporting, stock, analytics
 Requires at least: 3.8
 Tested up to: 4.8.0
-Stable tag: 0.0.9
+Stable tag: 0.0.10
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -36,6 +36,9 @@ Developers can contribute to the source code on the [GitHub Repository](https://
 1. Example how much I have in my available stock.
 
 == Changelog ==
+
+= 0.0.10 - 2017-06-18 =
+* Fix class name
 
 = 0.0.9 - 2017-06-18 =
 * Fix text domain loading
