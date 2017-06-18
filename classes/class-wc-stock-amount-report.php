@@ -8,7 +8,7 @@ if (!class_exists('WP_List_Table')) {
 }
 
 /**
-* WC_Stock_Amount_Report
+* WC_Report_Stock_Amount
 *
 * @author      Thiago Guimarães (https://github.com/thiagogsr)
 * @category    Admin
@@ -16,7 +16,7 @@ if (!class_exists('WP_List_Table')) {
 * @version     0.0.10
 */
 
-class WC_Stock_Amount_Report extends WP_List_Table {
+class WC_Report_Stock_Amount extends WP_List_Table {
   private $max_items;
 
   /**
