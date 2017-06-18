@@ -91,7 +91,7 @@ class WC_StockAmount_Report {
   * @since 0.0.1
   */
   public static function initialize_location_admin_reports_path($report_path, $name, $class) {
-    if ('WC_Stock_Amount_Report' == $class) {
+    if ('WC_Report_stock_amount' == $class) {
       $report_path = self::$plugin_dir . '/classes/class-wc-' . $name . '-report.php';
     }
 
