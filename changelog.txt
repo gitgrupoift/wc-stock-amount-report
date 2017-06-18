@@ -1,5 +1,8 @@
 *** WC Stock Amount Report Changelog ***
 
+2017-06-18 - version 0.0.9
+* Fix text domain loading
+
 2017-06-18 - version 0.0.8
 * Fix i18n
 

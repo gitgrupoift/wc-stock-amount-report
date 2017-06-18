@@ -13,7 +13,7 @@ if (!class_exists('WP_List_Table')) {
 * @author      Thiago Guimarães (https://github.com/thiagogsr)
 * @category    Admin
 * @package     WooCommerce/Admin/Reports
-* @version     0.0.8
+* @version     0.0.9
 */
 
 class WC_Stock_Amount_Report extends WP_List_Table {
